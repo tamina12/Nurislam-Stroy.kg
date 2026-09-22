@@ -173,3 +173,45 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1700);
 
 });
+/* =========================
+   SCROLL ANIMATIONS
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* задержки */
+
+.space-card:nth-child(2) {
+    transition-delay: .08s;
+}
+
+.space-card:nth-child(3) {
+    transition-delay: .16s;
+}
+
+.space-card:nth-child(4) {
+    transition-delay: .24s;
+}
+
+.space-card:nth-child(5) {
+    transition-delay: .32s;
+}
+
+
+/* loader */
+
+body.loaded .loader {
+    pointer-events: none;
+}
